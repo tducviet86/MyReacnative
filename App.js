@@ -39,7 +39,6 @@ const Controller = () => {
   const [appIsReady, setAppIsReady] = useState(false);
 
   const setup = async () => {
-    // goi lay token o dia cung luu vao redux ram
     await dispatch(getTokenThunk());
     setAppIsReady(true);
   };
